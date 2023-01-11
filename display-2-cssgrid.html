@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>CSS Grid ::</title>
   <style>
     .container {
       display: grid;
-      width: 400px;
-      height: 400px;
-      background: papayawhip;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+      width: 500px;
+      height: 500px;
+      background:  #000000 ;
+      grid-template-columns: 
+      1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 
+      1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
     .item {
-      background: pink;
+      background: #FFBF00;
     }
     .container .item:nth-child(1) {
       grid-column: 1 / 2;
@@ -32,10 +34,30 @@
       grid-column: 4 / 5;
       grid-row: 4 / 5;
     }
+    .container .item:nth-child(5) {
+      grid-column: 5 / 6;
+      grid-row: 5 / 6;
+    }
+    .container .item:nth-child(6) {
+      grid-column: 6 / 7;
+      grid-row: 6 / 7;
+    }
+    .container .item:nth-child(7) {
+      grid-column: 7 / 8;
+      grid-row: 7 / 8;
+    }
+    .container .item:nth-child(8) {
+      grid-column: 8 / 9;
+      grid-row: 8 / 9;
+    }
   </style>
 </head>
 <body>
   <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
     <div class="item"></div>
     <div class="item"></div>
     <div class="item"></div>
